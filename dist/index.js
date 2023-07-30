@@ -13,8 +13,16 @@ $(document).ready(function () {
       1000
     );
   });
+
   $('.calc-in-btn').on('click', function () {
-    var calcIn = parseFloat($('.calc-in-input').val());
+    var calcIn = $('.calc-in-input').val();
+    
+
+    // Удаление символа "€" из строки с помощью регулярного выражения
+    calcIn = calcIn.replace(/\s/g, '');
+    calcIn = calcIn.replace(/€/g, '');
+    // Преобразование строки в число
+    calcIn = parseFloat(calcIn);
     if (isNaN(calcIn) || calcIn < 1) {
       $('.calc-out-val').text('0');
     } else {
@@ -24,20 +32,36 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function() {
-    $('.main-poper>div').fadeOut()
-    const observer = new IntersectionObserver(function(entries) {
-        entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            $(".main-poper div").each(function(index) {
-            const $div = $(this);
-            $div.delay(index * 500).fadeIn(200);
-            });
-            observer.disconnect();
-        }
-        });
+$(document).ready(function () {
+  $('#cur').inputmask({
+    alias: 'numeric',
+    radixPoint: '.',
+    groupSeparator: ' ',
+    autoGroup: false,
+    suffix: ' €',
+    digits: 2,
+    rightAlign: false,
+    allowMinus: false,
+    removeMaskOnSubmit: true,
+    min: 1,
+    max: 999999999,
   });
-  observer.observe($(".main-poper")[0]);
+});
+
+$(document).ready(function () {
+  $('.main-poper>div').fadeOut();
+  const observer = new IntersectionObserver(function (entries) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        $('.main-poper div').each(function (index) {
+          const $div = $(this);
+          $div.delay(index * 500).fadeIn(200);
+        });
+        observer.disconnect();
+      }
+    });
+  });
+  observer.observe($('.main-poper')[0]);
 });
 
 $(document).ready(function () {
@@ -52,6 +76,7 @@ $(document).ready(function () {
     },
   });
 });
+
 $(document).ready(function () {
   const inputbot = document.querySelector('#botphone');
   const itibot = window.intlTelInput(inputbot, {
@@ -64,4 +89,3 @@ $(document).ready(function () {
     },
   });
 });
-

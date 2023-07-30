@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css">
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
 </head>
 <body>
     <section class="top desktop">
@@ -156,7 +157,7 @@
                     Укажите сумму которую вы хотите проинвестировать:
                 </p>
                 <div class="calc-in">
-                    <input type="number" class="calc-in-input" placeholder="1000€" min="1">
+                    <input type="text" class="calc-in-input" placeholder="1000€" min="1" id="cur">
                     <button class="calc-in-btn">Рассчитать</button>
                 </div>
                 <div class="calc-out">
