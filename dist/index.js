@@ -18,7 +18,7 @@ $(document).ready(function () {
     if (isNaN(calcIn) || calcIn < 1) {
       $('.calc-out-val').text('0');
     } else {
-      var calcOut = calcIn * 2.2;
+      var calcOut = calcIn * 3.8;
       $('.calc-out-val').text(calcOut.toFixed(0) + '€/мес.');
     }
   });
@@ -31,7 +31,7 @@ $(document).ready(function() {
         if (entry.isIntersecting) {
             $(".main-poper div").each(function(index) {
             const $div = $(this);
-            $div.delay(index * 700).fadeIn(500);
+            $div.delay(index * 500).fadeIn(500);
             });
             observer.disconnect();
         }
