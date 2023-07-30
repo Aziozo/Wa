@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>WhatsApp Business</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css">
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+</head>
+<body>
+    <section class="top">
+        <div class="container">
+            <div class="top-section">
+                <p class="top-section-p">Заработано с нами за 24ч:<span>1,830,837.94€</span></p>
+            </div>
+            <div class="top-section">
+                <p class="top-section-p">Инвестировано в нас за 24ч:<span>4,232,583.23€</span></p>
+            </div>
+            <div class="top-section">
+                <p class="top-section-p">Выведено за 24ч:<span>921,353.77€</span></p>
+            </div>
+        </div>
+    </section>
+    <section class="main">
+        <div class="container">
+            <header class="header">
+                <div class="header-logo">
+                    <img src="img/header-logo.svg">
+                </div>
+                <nav class="header-nav">
+                    <a href="#advantages">Преимущества</a>
+                    <a href="#calc">Калькулятор доходности</a>
+                </nav>
+            </header>
+            <div class="main-content" id="form">
+                <div class="main-content-col">
+                    <h1 class="main-content-h1">
+                        WhatsApp Бот совершает сделки на финансовых рынках и приносит ежемесячную прибыль от 4000€
+                    </h1>
+                    <p class="main-content-p">
+                        Регистрируйся, новая жизнь ждет тебя!
+                    </p>
+                    <form action="#" class="main-content-form">
+                        <input type="text" placeholder="Ваше Имя" class="main-content-form-input" required>
+                        <input type="text" placeholder="Ваша Фамилия" class="main-content-form-input" required>
+                        <input type="email" placeholder="Email" class="main-content-form-input" required>
+                        <input type="tel" class="main-content-form-input" id="topphone" required>
+                        <input type="submit" value="Регистрация" class="main-content-form-submit">
+                    </form>
+                </div>
+                <div class="main-content-col main-poper">
+                    <div class="main-poper-first">
+                        <p class="main-poper-time">12:52</p>
+                        <div class="main-poper-wrap">
+                            <p class="main-poper-wrap-p">
+                                Прибыьные сделки за сегодня:<br> <!-- Перенос строки/Line break -->  
+                                🟢 EUR/USD +465€ <br> <!-- Перенос строки/Line break -->
+                                🟢 GBP/USD +338€
+                            </p> 
+                        </div>
+                    </div>
+                    <div class="main-poper-second">
+                        <p class="main-poper-time">12:52</p>
+                        <p class="main-poper-wrap-p">
+                            Ваша прибыль за сегоднешний день составила <span>803€</span>
+                            Хотите вывести средства на карту? <img src="img/money-face.webp" style="width: 17px;">
+                        </p>
+                    </div>
+                    <div class="main-poper-third">
+                        <div class="main-poper-btn">Вывести</div>
+                        <div class="main-poper-btn">Оставить</div>
+                    </div>
+                    <div class="main-poper-fourth">
+                        <p class="main-poper-time">12:52</p>
+                        <p class="main-poper-wrap-p">
+                            Средства были успешно выведены, ожидайте пополнение карты в течении 10 минут! 💶
+                        </p>
+                    </div>
+                    <div class="main-poper-fifth">
+                        <p style="color: #fff;">Спасибо!</p>
+                        <p class="main-poper-time" style="color:#fff;">12:52</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="advantages" id="advantages">
+        <div class="container">
+            <h2 class="advantages-h2">Наши преимущества</h2>
+            <p class="advantages-p">Почему вам стоит начать инвестировать</p>
+            <div class="advantages-wrap">
+                <div class="advantages-item">
+                    <img src="img/adv/in.png">
+                    <h3 class="advantages-item-h3">
+                        Низкий порог входа
+                    </h3>
+                    <p class="advantages-item-p">
+                        Начинать инвестировать можно с 150€
+                        <br> <!-- Перенос строки/Line break -->
+                        <br> <!-- Перенос строки/Line break -->
+                        Искусственный интеллект торгует на любой фазе рынка, не имеет значение бычий сейчас тренд или медвежий!
+                    </p>
+                </div>
+                <div class="advantages-item">
+                    <img src="img/adv/set.png">
+                    <h3 class="advantages-item-h3">
+                        Полная автоматизация всех процессов
+                    </h3>
+                    <p class="advantages-item-p">
+                        Искусственный интеллект анализирует информацию и проделывает 94 482 операций в секунду.
+                        Вы сводите свои риски к нулю, так как точность составляет 98,7%.
+                    </p>
+                </div>
+                <div class="advantages-item">
+                    <img src="img/adv/risk.png">
+                    <h3 class="advantages-item-h3">
+                        Минимальные риски
+                    </h3>
+                    <p class="advantages-item-p">
+                        Благодаря искусственный интеллекту, заложенным в память нашей виртуальной машины, у нас получилось их минимизировать и
+                        показать высокий результат на длительных дистанциях.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="banner">
+        <div class="container">
+            <h2 class="banner-h2">
+                <span>WhatsApp Business</span>
+                <br> <!-- Перенос строки/Line break -->
+                Бот который поможет заработать всем!
+            </h2>
+            <a href="#form" class="banner-btn">Начать зарабатывать</a>
+            <div class="mark">
+                <img src="img/mark.png">
+            </div>
+        </div>
+    </section>
+    <section class="calc" id="calc">
+        <div class="container">
+            <div class="calc-video">
+
+            </div>
+            <div class="calc-wrap">
+                <h3 class="calc-h3">
+                    Калькулятор доходности:
+                </h3>
+                <p class="calc-p">
+                    Укажите сумму которую вы хотите проинвестировать:
+                </p>
+                <div class="calc-in">
+                    <input type="number" class="calc-in-input" placeholder="1000€" min="1">
+                    <button class="calc-in-btn">Рассчитать</button>
+                </div>
+                <div class="calc-out">
+                    <p class="calc-out-p">Потенциальная прибыль</p>
+                    <p class="calc-out-val">4258€/мес.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="back">
+        <div class="container">
+            <h3 class="back-h3">Подключайся к системе автоматической торговли</h3>
+            <p class="back-p">Скорее оставляй заявку на сайте</p>
+            <form action="#" class="back-form">
+                <input class="back-form-input" type="text" placeholder="Ваше Имя" required>
+                <input class="back-form-input" type="text" placeholder="Ваша Фамилия" required>
+                <input class="back-form-input" type="email" placeholder="Email" required>
+                <input type="tel" class="back-form-input" id="botphone" required>
+                <input class="back-form-submit" type="submit" value="Регистрация">
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <img src="img/header-logo.svg">
+            </div>
+            <nav class="footer-nav">
+                <a href="#advantages">Преимущества</a>
+                <a href="#calc">Калькулятор доходности</a>
+            </nav>
+        </div>
+        <div class="container">
+            <hr>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                Copyright © 2017-2023 WhatsApp Business
+            </div>
+            <div class="logos">
+                <img src="img/visa.png">
+                <img src="img/mc.png">
+            </div>
+        </div>
+    </footer>
+    
+
+<script src="dist/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.top{
+    background: linear-gradient(92deg, #43CD66 1.84%, #00A429 99.51%);
+    height: 59px;
+
+    .container{
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-section{
+        display: flex;
+
+        &-p{
+            user-select: none;
+            color: #FFF;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            span{
+                margin-left: 5px;
+                color: #FFF;
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        }
+    }
+}

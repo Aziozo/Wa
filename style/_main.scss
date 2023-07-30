@@ -1,0 +1,196 @@
+.main{
+    padding-top: 30px;
+    height: 752px;
+    background: url(../img/hero-bg.png) center center/cover;
+    .container{
+        flex-direction: column;
+    }
+
+    &-content{
+        padding-top: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        &-col{
+            width: 100%;
+            max-width: 570px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-h1{
+            color: #FFF;
+            font-family: Inter;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        &-p{
+            margin-top: 15px;
+            color: #FFF;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        &-form{
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            &-input{
+                width: 100%;
+                max-width: 415px;
+                border: 0px;
+                border-radius: 30px;
+                background: #FFF;
+                padding: 15px 20px;
+                color: #000;
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            &-submit{
+                max-width: 415px;
+                cursor: pointer;
+                border: 0px;
+                border-radius: 30px;
+                padding: 15px 20px;
+                background: #28cf52; 
+                color: #FFF;
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                transition: all .3s ease-in;
+
+                &:hover{
+                    background: #00A429;
+                }
+        }
+        }
+    }
+
+    &-poper{
+        max-width: 516px;
+        gap: 30px;
+
+        &-btn{
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 16px;
+            background: linear-gradient(92deg, #43CD66 1.84%, #00A429 99.51%);
+            width: 156px;
+            height: 49px;
+            color: #FFF;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        &-time{
+            color: #000;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 150.023%;
+        }
+
+        &-wrap{
+            display: flex;
+            flex-direction: column;
+
+            &-p{
+                color: #676767;
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 150.023%;
+                
+                span{
+                    font-weight: 800;
+                    color: #43CD66;
+                }
+            }
+        }
+
+        >div{
+            display: flex;
+            padding: 15px;
+            gap: 15px;
+        }
+
+        &-first{
+            margin-top: 35px;
+            width: 100%;
+            max-width: 346px;
+            height: 102px;
+            border-radius: 8px 32px 32px 32px;
+            background: #FFF;
+        }
+
+        &-second{
+            width: 100%;
+            max-width: 516px;
+            height: 78px;
+            border-radius: 8px 32px 32px 32px;
+            background: #FFF;
+        }
+
+        &-third{
+            margin-left: auto;
+            width: 100%;
+            max-width: 357px;
+            height: 79px;
+            border-radius: 32px 8px 32px 32px;
+            background: #FFF;
+        }
+
+        &-fourth{
+            width: 100%;
+            max-width: 465px;
+            height: 78px;
+            border-radius: 8px 32px 32px 32px;
+            background: #FFF;
+        }
+
+        &-fifth{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            width: 100%;
+            max-width: 160px;
+            height: 54px;
+            flex-shrink: 0;
+            border-radius: 32px 8px 32px 32px;
+            background: #00A429;
+            
+            p{
+                color: #FFF;
+                font-family: Inter;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 150.023%;
+                /* 24.004px */
+            }
+        }
+    }
+}

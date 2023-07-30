@@ -1,0 +1,105 @@
+.calc{
+    padding-top: 70px;
+    padding-bottom: 100px;
+
+
+    &-wrap{
+        width: 100%;
+        max-width: 470px;
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &-video{
+        width: 672px;
+        height: 375px;
+        border-radius: 10px;
+        background-color: #34394e;
+    }
+
+    &-h3{
+        color: #676767;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    &-p{
+        margin-top: 30px;
+        color: #676767;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &-in{
+        margin-top: 20px;
+        display: flex;
+
+        &-input{
+            padding: 20px;
+            width: 265px;
+            height: 50px;
+            border: 0px;
+            border-radius: 13px 0px 0px 13px;
+            background: #ECECEC;
+            color: #000;
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        &-btn{
+            cursor: pointer;
+            width: 205px;
+            border: 0px;
+            border-radius: 0px 16px 16px 0px;
+            background-color: #06a82f;
+            color: #FFF;
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+
+    &-out{
+        padding: 20px 15px;
+        margin-top: 30px;
+        width: 469px;
+        height: 101px;
+        border-radius: 13px;
+        border: 1px solid #000;
+        background: #FFF;
+        display: flex;
+        flex-direction: column;
+
+        &-p{
+            color: #313131;
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        &-val{
+            margin-top: 10px;
+            color: #313131;
+            font-family: Inter;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+}

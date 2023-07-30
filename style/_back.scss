@@ -1,0 +1,66 @@
+.back{
+    padding-bottom: 70px;
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-h3{
+        color: #676767;
+        text-align: center;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    &-p{
+        margin-top: 15px;
+        color: #676767;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &-form{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        max-width: 415px;
+
+        &-input{
+            width: 100%;
+            max-width: 415px;
+            padding: 15px 20px;
+            border: 0px;
+            border-radius: 30px;
+            background: #ECECEC;
+            color: #000;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        &-submit{
+            cursor: pointer;
+            border: 0px;
+            height: 50px;
+            border-radius: 30px;
+            background: linear-gradient(-92deg, #43CD66 1.84%, #00A429 99.51%);
+            color: #FFF;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+
+}

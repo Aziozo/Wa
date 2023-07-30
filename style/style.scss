@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+@import 'top';
+@import 'header';
+@import 'main';
+@import 'advantages';
+@import 'banner';
+@import 'calc';
+@import 'back';
+@import 'footer';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section, header, footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .container{
+        width: 100%;
+        max-width: 1168px;
+        display: flex;
+    }
+}
+
+input:focus {
+    outline: none;
+}
+
+/* Убираем стрелки для числовых инпутов */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.iti__selected-flag{
+    padding: 0px 20px !important;
+}
+
+.iti--allow-dropdown input,
+.iti--allow-dropdown input[type=text],
+.iti--allow-dropdown input[type=tel],
+.iti--separate-dial-code input,
+.iti--separate-dial-code input[type=text],
+.iti--separate-dial-code input[type=tel]{
+    padding-left: 65px !important;
+}
