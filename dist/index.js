@@ -31,7 +31,7 @@ $(document).ready(function() {
         if (entry.isIntersecting) {
             $(".main-poper div").each(function(index) {
             const $div = $(this);
-            $div.delay(index * 500).fadeIn(500);
+            $div.delay(index * 500).fadeIn(200);
             });
             observer.disconnect();
         }
