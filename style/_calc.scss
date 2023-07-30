@@ -2,7 +2,11 @@
     padding-top: 70px;
     padding-bottom: 100px;
 
-
+    .container{
+        @media screen and (max-width: 1168px){
+            flex-direction: column;
+        }
+    }
     &-wrap{
         width: 100%;
         max-width: 470px;
@@ -10,6 +14,12 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        @media screen and (max-width: 1168px){
+            margin-left: 0px;
+            margin-top: 30px;
+            align-items: center;
+        }
     }
 
     &-video{
@@ -17,6 +27,10 @@
         height: 375px;
         border-radius: 10px;
         background-color: #34394e;
+        @media screen and (max-width: 1168px){
+            width: 100%;
+            height: 191px;
+        }
     }
 
     &-h3{
@@ -36,6 +50,11 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+
+        @media screen and (max-width: 1168px){
+            margin-top: 10px;
+            text-align: center;
+        }
     }
 
     &-in{
@@ -55,6 +74,10 @@
             font-style: normal;
             font-weight: 600;
             line-height: normal;
+
+            @media screen and (max-width: 1168px){
+                width: calc(100% - 126px);
+            }
         }
 
         &-btn{
@@ -69,6 +92,9 @@
             font-style: normal;
             font-weight: 600;
             line-height: normal;
+            @media screen and (max-width: 1168px){
+                width: 126px;
+            }
         }
     }
 
@@ -82,6 +108,11 @@
         background: #FFF;
         display: flex;
         flex-direction: column;
+
+        @media screen and (max-width: 1168px){
+            align-items: center;
+            width: 100%;
+        }
 
         &-p{
             color: #313131;

@@ -20,6 +20,10 @@ section, header, footer{
     display: flex;
     justify-content: center;
 
+    @media screen and (max-width: 1168px){
+        padding: 0px 10px 0px 10px;
+    }
+
     .container{
         width: 100%;
         max-width: 1168px;
@@ -54,4 +58,18 @@ input[type="number"] {
 .iti--separate-dial-code input[type=text],
 .iti--separate-dial-code input[type=tel]{
     padding-left: 65px !important;
+}
+
+.mobile{
+    display: none;
+}
+
+@media screen and (max-width: 1168px){
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: flex;
+    }
 }
