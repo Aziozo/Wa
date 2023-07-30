@@ -1,4 +1,12 @@
 $(document).ready(function () {
+  if ($(window).width() < 1168) {
+    $('.main-poper-btn').replaceWith(
+      "<a href='#form' class='main-poper-btn'>Вывести</a>"
+    );
+  }
+});
+
+$(document).ready(function () {
   // Обработчик события для ссылки с якорем
   $('a[href^="#"]').click(function (e) {
     e.preventDefault(); // Отменяем стандартное действие ссылки
@@ -16,7 +24,6 @@ $(document).ready(function () {
 
   $('.calc-in-btn').on('click', function () {
     var calcIn = $('.calc-in-input').val();
-    
 
     // Удаление символа "€" из строки с помощью регулярного выражения
     calcIn = calcIn.replace(/\s/g, '');
