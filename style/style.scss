@@ -1,75 +1,268 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
-@import 'top';
-@import 'header';
-@import 'main';
-@import 'advantages';
-@import 'banner';
-@import 'calc';
-@import 'back';
-@import 'footer';
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap");
+@import "top";
+@import "header";
+@import "main";
+@import "advantages";
+@import "banner";
+@import "calc";
+// @import "back";
+@import "footer";
+@import "tips";
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-section, header, footer{
+section,
+header,
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: 1168px) {
+    padding: 0px 10px 0px 10px;
+  }
+
+  .container {
     width: 100%;
+    max-width: 1168px;
     display: flex;
-    justify-content: center;
-
-    @media screen and (max-width: 1168px){
-        padding: 0px 10px 0px 10px;
-    }
-
-    .container{
-        width: 100%;
-        max-width: 1168px;
-        display: flex;
-    }
+  }
 }
 
 input:focus {
-    outline: none;
+  outline: none;
+}
+
+.form {
+  background-image: url(../img/hero-bg.png);
+  padding: 100px 0px;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-load {
+    background-color: rgba(255, 255, 255, 0.24);
+    width: 100%;
+    max-width: 673px;
+    height: 326px;
+    padding: 30px 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__circle {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 254px;
+      height: 254px;
+
+      font-family: Inter;
+      font-size: 48px;
+      font-weight: 900;
+      line-height: 58px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #fff;
+
+      .load {
+        position: absolute;
+      }
+    }
+
+    &__warning {
+      margin-left: 30px;
+      max-width: 328px;
+      font-family: Inter;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 29px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #ffffff;
+
+      span {
+        color: #f05c5c;
+        font-size: 36px;
+        font-weight: 900;
+      }
+    }
+  }
+
+  &-conatiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__h2 {
+      font-family: Inter;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 29px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #fff;
+    }
+  }
+
+  &-form {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 415px;
+
+    &-input {
+      width: 100%;
+      max-width: 415px;
+      padding: 15px 20px;
+      border: 0px;
+      border-radius: 30px;
+      background: #ececec;
+      color: #000;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    &-submit {
+      cursor: pointer;
+      border: 0px;
+      height: 50px;
+      border-radius: 30px;
+      background: linear-gradient(-92deg, #43cd66 1.84%, #00a429 99.51%);
+      color: #fff;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+}
+
+.info {
+  padding: 70px 0px;
+
+  .container {
+    flex-direction: column;
+  }
+
+  &-h2 {
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #676767;
+  }
+
+  &-p {
+    max-width: 574px;
+    margin-top: 10px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #676767;
+  }
+
+  &-wrapper {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-col {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &-row {
+      width: 100%;
+      display: flex;
+      gap: 20px;
+    }
+  }
+
+  &-type {
+    width: 100%;
+    max-width: 197px;
+    text-align: start;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #676767;
+  }
+
+  &-text {
+    max-width: 394px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #676767;
+  }
 }
 
 /* Убираем стрелки для числовых инпутов */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 /* Firefox */
 input[type="number"] {
-    -moz-appearance: textfield;
+  -moz-appearance: textfield;
 }
 
-.iti__selected-flag{
-    padding: 0px 20px !important;
+.iti__selected-flag {
+  padding: 0px 20px !important;
 }
 
 .iti--allow-dropdown input,
-.iti--allow-dropdown input[type=text],
-.iti--allow-dropdown input[type=tel],
+.iti--allow-dropdown input[type="text"],
+.iti--allow-dropdown input[type="tel"],
 .iti--separate-dial-code input,
-.iti--separate-dial-code input[type=text],
-.iti--separate-dial-code input[type=tel]{
-    padding-left: 65px !important;
+.iti--separate-dial-code input[type="text"],
+.iti--separate-dial-code input[type="tel"] {
+  padding-left: 65px !important;
 }
 
-.mobile{
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1168px) {
+  .desktop {
     display: none;
+  }
+
+  .mobile {
+    display: flex;
+  }
 }
 
-@media screen and (max-width: 1168px){
-    .desktop{
-        display: none;
-    }
-
-    .mobile{
-        display: flex;
-    }
-}
+// UPD
