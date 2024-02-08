@@ -1057,6 +1057,8 @@ input[type=number] {
     height: 1110px;
   }
   .banner-btn {
+    position: relative;
+    z-index: 10;
     width: 100%;
   }
   .banner-p {
