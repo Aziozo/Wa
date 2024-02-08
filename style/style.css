@@ -869,7 +869,7 @@ input:focus {
   flex-direction: column;
   gap: 20px;
   width: 100%;
-  max-width: 415px;
+  max-width: 512px;
 }
 .form-form-input {
   width: 100%;
