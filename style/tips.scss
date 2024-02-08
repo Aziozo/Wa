@@ -1,3 +1,15 @@
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .tips {
   padding: 60px 0px;
 
@@ -65,13 +77,16 @@
       }
 
       &-loader {
+        position: absolute;
         z-index: 1;
         position: relative;
         margin-top: 15px;
         width: 100%;
         border-radius: 35px;
         height: 30px;
-        background-color: #1dbf7c;
+        background: linear-gradient(to right, #1dbf7c, #098d56);
+        background-size: 200% auto;
+        animation: gradientAnimation 2s ease infinite;
 
         .red {
           z-index: 2;
@@ -100,6 +115,15 @@
           &.right {
             width: 17%;
           }
+        }
+
+        .sup {
+          position: absolute;
+          width: 71%;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
       }
     }
