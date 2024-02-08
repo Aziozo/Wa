@@ -340,7 +340,13 @@ input[type="number"] {
     }
 
     &-text {
+      word-wrap: break-word;
+
       width: 190px;
+    }
+
+    &-type {
+      width: 123px;
     }
   }
 }

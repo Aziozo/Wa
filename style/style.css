@@ -1098,6 +1098,10 @@ input[type=number] {
     flex-direction: column;
   }
   .info-text {
+    word-wrap: break-word;
     width: 190px;
+  }
+  .info-type {
+    width: 123px;
   }
 }/*# sourceMappingURL=style.css.map */
