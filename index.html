@@ -383,6 +383,17 @@
 
     <script src="dist/index.js"></script>
     <script>
+      $(window).on("scroll", function () {
+        var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+        var elementTop = $(".prog").offset().top;
+
+        if (elementTop <= windowBottom) {
+          loadCircle();
+          // Удаляем обработчик события, чтобы анимация запустилась только один раз
+          $(window).off("scroll");
+        }
+      });
+
       function loadCircle() {
         $(".prog").animate(
           { width: "97%" },
