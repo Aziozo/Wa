@@ -853,6 +853,8 @@ input:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: 415px;
 }
 .form-conatiner__h2 {
   font-family: Inter;
@@ -869,7 +871,7 @@ input:focus {
   flex-direction: column;
   gap: 20px;
   width: 100%;
-  max-width: 512px;
+  max-width: 415px;
 }
 .form-form-input {
   width: 100%;
