@@ -104,9 +104,21 @@
 }
 .tips-wrapper__item-loader .sup {
   position: absolute;
-  width: 71%;
   height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+}
+.tips-wrapper__item-loader .sup.left {
+  width: 71%;
+}
+.tips-wrapper__item-loader .sup.right {
+  width: 83%;
 }/*# sourceMappingURL=tips.css.map */
