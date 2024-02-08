@@ -880,6 +880,7 @@ input:focus {
   justify-content: space-between;
 }
 .form-load {
+  border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.24);
   width: 100%;
   max-width: 673px;
