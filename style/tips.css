@@ -74,7 +74,7 @@
   width: 100%;
   border-radius: 35px;
   height: 30px;
-  background: linear-gradient(to right, #1dbf7c, #098d56);
+  background: linear-gradient(to right, #1dbf7c, #023621);
   background-size: 200% auto;
   animation: gradientAnimation 2s ease infinite;
 }
