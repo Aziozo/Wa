@@ -265,6 +265,84 @@ input[type="number"] {
   .mobile {
     display: flex;
   }
+
+  .tips {
+    padding: 40px 16px;
+
+    &-h1 {
+      text-align: center;
+    }
+  }
+
+  .tips-wrapper {
+    flex-direction: column;
+  }
+
+  .tips-wrapper__item-icons {
+    img {
+      width: 27px;
+      height: 27px;
+    }
+  }
+
+  .banner {
+    height: 1110px;
+
+    &-btn {
+      width: 100%;
+    }
+
+    &-p {
+      text-align: center;
+    }
+  }
+
+  .main-content {
+    &-p {
+      font-family: Inter;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+    &__button {
+      margin-top: 30px;
+    }
+  }
+
+  .form {
+    padding: 40px 16px;
+    .container {
+      flex-direction: column;
+    }
+
+    &-load {
+      height: auto;
+      flex-direction: column;
+
+      &__warning {
+        max-width: 262px;
+        margin-top: 30px;
+        text-align: center;
+      }
+    }
+
+    &-conatiner {
+      margin-top: 40px;
+    }
+  }
+
+  .info {
+    padding: 40px 16px;
+    &-wrapper {
+      flex-direction: column;
+    }
+
+    &-text {
+      width: 190px;
+    }
+  }
 }
 
 // UPD
