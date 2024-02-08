@@ -105,16 +105,25 @@
   }
 }
 .main-content-h1 {
-  color: #FFF;
+  max-width: 470px;
+  color: #fff;
   font-family: Inter;
   font-size: 36px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
+.main-content-h1 span {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
 @media screen and (max-width: 1168px) {
   .main-content-h1 {
-    color: #FFF;
+    color: #fff;
     text-align: center;
     font-family: Inter;
     font-size: 24px;
@@ -124,13 +133,31 @@
   }
 }
 .main-content-p {
-  margin-top: 15px;
-  color: #FFF;
+  margin-top: 30px;
+  color: #fff;
+  font-family: Inter;
+  font-size: 29px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.main-content__button {
+  margin-top: 44px;
+  padding: 15px 0px;
+  background: linear-gradient(92.19deg, #43cd66 1.84%, #00a429 99.51%);
+  text-decoration: none;
+  width: 100%;
+  border-radius: 30px;
   font-family: Inter;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0em;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .main-content-form {
   margin-top: 25px;
@@ -148,7 +175,7 @@
   max-width: 415px;
   border: 0px;
   border-radius: 30px;
-  background: #FFF;
+  background: #fff;
   padding: 15px 20px;
   color: #000;
   font-family: Inter;
@@ -165,7 +192,7 @@
   border-radius: 30px;
   padding: 15px 20px;
   background: #28cf52;
-  color: #FFF;
+  color: #fff;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -174,7 +201,7 @@
   transition: all 0.3s ease-in;
 }
 .main-content-form-submit:hover {
-  background: #00A429;
+  background: #00a429;
 }
 .main-poper {
   max-width: 516px;
@@ -189,10 +216,10 @@
   align-items: center;
   justify-content: center;
   border-radius: 16px;
-  background: linear-gradient(92deg, #43CD66 1.84%, #00A429 99.51%);
+  background: linear-gradient(92deg, #43cd66 1.84%, #00a429 99.51%);
   width: 156px;
   height: 49px;
-  color: #FFF;
+  color: #fff;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -221,7 +248,7 @@
 }
 .main-poper-wrap-p span {
   font-weight: 800;
-  color: #43CD66;
+  color: #43cd66;
 }
 .main-poper > div {
   display: flex;
@@ -234,14 +261,14 @@
   max-width: 346px;
   height: 102px;
   border-radius: 8px 32px 32px 32px;
-  background: #FFF;
+  background: #fff;
 }
 .main-poper-second {
   width: 100%;
   max-width: 516px;
   height: 78px;
   border-radius: 8px 32px 32px 32px;
-  background: #FFF;
+  background: #fff;
 }
 @media screen and (max-width: 1168px) {
   .main-poper-second {
@@ -254,14 +281,14 @@
   max-width: 357px;
   height: 79px;
   border-radius: 32px 8px 32px 32px;
-  background: #FFF;
+  background: #fff;
 }
 .main-poper-fourth {
   width: 100%;
   max-width: 465px;
   height: 78px;
   border-radius: 8px 32px 32px 32px;
-  background: #FFF;
+  background: #fff;
 }
 @media screen and (max-width: 1168px) {
   .main-poper-fourth {
@@ -278,10 +305,10 @@
   height: 54px;
   flex-shrink: 0;
   border-radius: 32px 8px 32px 32px;
-  background: #00A429;
+  background: #00a429;
 }
 .main-poper-fifth p {
-  color: #FFF;
+  color: #fff;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -390,7 +417,7 @@
   }
 }
 .banner-h2 {
-  color: #FFF;
+  color: #fff;
   font-family: Inter;
   font-size: 36px;
   font-style: normal;
@@ -400,7 +427,7 @@
 @media screen and (max-width: 1168px) {
   .banner-h2 {
     text-align: center;
-    color: #FFF;
+    color: #fff;
     font-family: Inter;
     font-size: 24px;
     font-style: normal;
@@ -409,7 +436,7 @@
   }
 }
 .banner-h2 span {
-  color: #FFF;
+  color: #fff;
   font-family: Inter;
   font-size: 36px;
   font-style: normal;
@@ -418,7 +445,7 @@
 }
 @media screen and (max-width: 1168px) {
   .banner-h2 span {
-    color: #FFF;
+    color: #fff;
     text-align: center;
     font-family: Inter;
     font-size: 24px;
@@ -433,12 +460,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 224px;
+  width: 320px;
   height: 49px;
   text-decoration: none;
   border-radius: 16px;
-  background: linear-gradient(92deg, #43CD66 1.84%, #00A429 99.51%);
-  color: #FFF;
+  background: linear-gradient(92deg, #43cd66 1.84%, #00a429 99.51%);
+  color: #fff;
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
