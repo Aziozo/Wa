@@ -551,6 +551,11 @@
   justify-content: center;
   gap: 20px;
 }
+@media screen and (max-width: 1168px) {
+  .calc-wrap__container {
+    flex-direction: column;
+  }
+}
 .calc-video {
   width: 672px;
   height: 375px;
@@ -646,6 +651,8 @@
 @media screen and (max-width: 1168px) {
   .calc-out {
     align-items: center;
+    flex-direction: column;
+    gap: 10px;
     width: 100%;
   }
 }
