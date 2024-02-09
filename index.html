@@ -164,33 +164,26 @@
     </section>
     <section class="calc" id="calc">
       <div class="container">
-        <div class="calc-video">
-          <iframe
-            src="https://www.youtube.com/embed/ac_jAx_wSkA"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-        </div>
         <div class="calc-wrap">
           <h3 class="calc-h3">Калькулятор доходности:</h3>
           <p class="calc-p">
             Укажите сумму которую вы хотите проинвестировать:
           </p>
-          <div class="calc-in">
-            <input
-              type="text"
-              class="calc-in-input"
-              placeholder="1000€"
-              min="1"
-              id="cur"
-            />
-            <button class="calc-in-btn">Рассчитать</button>
-          </div>
-          <div class="calc-out">
-            <p class="calc-out-p">Потенциальная прибыль</p>
-            <p class="calc-out-val">4258€/мес.</p>
+          <div class="calc-wrap__container">
+            <div class="calc-in">
+              <input
+                type="text"
+                class="calc-in-input"
+                placeholder="1000€"
+                min="1"
+                id="cur"
+              />
+              <button class="calc-in-btn">Рассчитать</button>
+            </div>
+            <div class="calc-out">
+              <p class="calc-out-p">Потенциальная прибыль</p>
+              <p class="calc-out-val">4258€/мес.</p>
+            </div>
           </div>
         </div>
       </div>
